@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_cc_parcel
+    description: "includes staging parcel data"
+    columns:
+      - name: parcel_id
+        description: "id of the parcel"
+        tests:
+          - not_null
+          - unique
+
+  - name: stg_cc_parcel_product
+    description: "includes staging parcel product data"
+    columns:
+      - name: parcel_id
+        description: "id of the parcel"
+        tests:
+          - not_null
+          - unique       
