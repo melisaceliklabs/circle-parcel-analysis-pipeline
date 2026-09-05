@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: circle
+    database: greenweez-507113
+    schema: raw_data_circle
+    tables:
+      - name: parcel
+        identifier: raw_cc_parcel
+        description: "includes raw parcel data"
+        columns:
+          - name: Parcel_id
+            description: "id of the parcel"
+            tests:
+              - not_null
+              - unique
+
+      - name: parcel_product
+        identifier: raw_cc_parcel_product
+        description: "includes raw parcel product data"
+        columns:
+          - name: ParCEL_id
+            description: "id of the parcel"
+            tests:
+              - not_null
