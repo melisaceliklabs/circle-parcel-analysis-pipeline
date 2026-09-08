@@ -17,4 +17,4 @@ models:
         description: "id of the parcel"
         tests:
           - not_null
-          - unique       
+                

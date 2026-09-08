@@ -43,5 +43,4 @@ models:
       +schema: parcel_dbt_dev
 
       staging:
-       
        +schema: parcel_dbt_dev_staging
