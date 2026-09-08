@@ -23,3 +23,22 @@ sources:
             description: "id of the parcel"
             tests:
               - not_null
+
+models:
+  - name: cc_parcel
+    description: "final parcel model"
+    columns:
+      - name: parcel_id
+        description: "id of the parcel"
+        tests:
+          - not_null
+          - unique
+
+  - name: cc_parcel_product
+    description: "final parcel product model"
+    columns:
+      - name: parcel_id
+        description: "id of the parcel"
+        tests:
+          - not_null
+          
